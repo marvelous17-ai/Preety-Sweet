@@ -1,0 +1,60 @@
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+.card img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 12px 14px;
+  border-radius: 50%;
+  z-index: 999;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+form input, form textarea {
+  border-radius: 10px;
+  border: 1px solid #f06292;
+}
+form input:focus, form textarea:focus {
+  border-color: #ec407a;
+  box-shadow: 0 0 5px rgba(236, 64, 122, 0.4);
+}
+
+
+/* Section padding for mobile */
+section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Ensure product cards don't overflow */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* WhatsApp button for smaller screens */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 12px;
+    font-size: 20px;
+  }
+}
+
